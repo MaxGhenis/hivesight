@@ -10,11 +10,13 @@ def get(var):
 
 age = get("age")
 state = get("state_code")
-wages = get("employment_income")
+income = get("employment_income")
 
-df = pd.DataFrame({"age": age, "state": state, "wages": wages, "weight": age.weights})
+df = pd.DataFrame(
+    {"age": age, "state": state, "income": income, "weight": age.weights}
+)
 
 # Aggregate by all variables except weight.
-df_dedup = df.groupby(["age", "state", "wages"]).weight.sum().reset_index()
+df_dedup = df.groupby(["age", "state", "income"]).weight.sum().reset_index()
 
 df_dedup.to_csv("perspectives.csv", index=False)

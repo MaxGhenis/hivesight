@@ -37,7 +37,7 @@ HiveSight will generate responses from the perspective of an environmental activ
 5. Enable "Request Explanation"
 6. Click "Run LLM Multiple Times"
 
-HiveSight will select a random perspective from PolicyEngine's calibrated nationwide survey dataset, such as "35-year-old from California with a wage of $75,000," and generate responses based on that perspective. The tool will provide the percentage of 'yes' responses, a confidence interval, and a summary of the explanations given by the LLMs.
+HiveSight will select a random perspective from PolicyEngine's calibrated nationwide survey dataset, such as "35-year-old from California with annual income of $75,000," and generate responses based on that perspective. The tool will provide the percentage of 'yes' responses, a confidence interval, and a summary of the explanations given by the LLMs.
 
 ## Requirements
 
